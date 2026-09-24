@@ -1,4 +1,4 @@
-# lab1Fsi
+# aerolineaVirtual
 
 This application was generated using JHipster 9.2.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v9.2.0](https://www.jhipster.tech/documentation-archive/v9.2.0).
 
@@ -88,7 +88,7 @@ For further instructions on how to develop with JHipster, have a look at [Using 
 
 ### Packaging as jar
 
-To build the final jar and optimize the lab1Fsi application for production, run:
+To build the final jar and optimize the aerolineaVirtual application for production, run:
 
 ```bash
 ./mvnw -Pprod clean verify
@@ -129,6 +129,16 @@ To launch your application's tests, run:
 
 ```bash
 ./mvnw verify
+```
+
+### Gatling
+
+Performance tests are run by [Gatling](https://gatling.io/) and written in Scala. They're located in [src/test/java/gatling/simulations](src/test/java/gatling/simulations).
+
+You can execute all Gatling tests with
+
+```bash
+./mvnw gatling:test
 ```
 
 ### Client tests
@@ -237,6 +247,7 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 - [Setting up Continuous Integration](https://www.jhipster.tech/documentation-archive/v9.2.0/setting-up-ci/)
 - [Node.js](https://nodejs.org/)
 - [NPM](https://www.npmjs.com/)
+- [Gatling](https://gatling.io/)
 - [Webpack](https://webpack.js.org/)
 - [BrowserSync](https://www.browsersync.io/)
 - [Jest](https://jestjs.io)

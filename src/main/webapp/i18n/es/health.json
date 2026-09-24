@@ -17,7 +17,7 @@
       "livenessState": "Liveness state",
       "readinessState": "Readiness state",
       "ping": "Aplicación",
-      "r2dbc": "Base de Datos"
+      "db": "Base de Datos"
     },
     "table": {
       "service": "Nombre del servicio",

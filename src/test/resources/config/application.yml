@@ -15,11 +15,11 @@
 
 spring:
   application:
-    name: lab1Fsi
+    name: aerolineaVirtual
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: test
-  jackson:
+  jackson2:
     serialization:
       write-durations-as-timestamps: false
   mail:
@@ -36,13 +36,13 @@ spring:
           authorities-claim-name: auth
   task:
     execution:
-      thread-name-prefix: lab-1-fsi-task-
+      thread-name-prefix: aerolinea-virtual-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: lab-1-fsi-scheduling-
+      thread-name-prefix: aerolinea-virtual-scheduling-
       pool:
         size: 20
   thymeleaf:
@@ -59,9 +59,9 @@ server:
 # ===================================================================
 jhipster:
   clientApp:
-    name: 'lab1FsiApp'
+    name: 'aerolineaVirtualApp'
   mail:
-    from: lab1Fsi@localhost.com
+    from: aerolineaVirtual@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender
@@ -75,7 +75,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: MGUyMDM3ZDA1NjMxOGM0MzAyNzZlMDJhMWQ1ZTcyYWFmNjM2ZGM4M2UzOGI0ZGEzMzY0M2I0YTBiOTAzNThkZjdiYjI0ZTdjMTUwNTVlNWRmMjk4YmFlNzE1MmJlNmI2NmU1MjM1YTkxZDc0YmQzNzU3MTM0YmYwNTdmMzY2NzY=
+        base64-secret: ZWE4ODU5YjA2MWY3NTI5NDE5ZTBiMmMyMjUwYTg0MmNmZjFiMjAzZmJiYjUxMzhiNzU5ZTYyMjM0N2I0ZWVlYTcxYWZjMWUzMzJlZWUxNmQ3NzBlMjM2YzAzMDlkMmNiZWExOTI3OTExMWJlYjk4MGY1MjQ2MzczMjk4NDUzMjg=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 86400

@@ -1,13 +1,17 @@
 {
   "global": {
-    "title": "Lab1Fsi",
+    "title": "AerolineaVirtual",
     "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"https://browsehappy.com/?locale=es\">actualice su navegador</a> para mejorar su experiencia.",
     "menu": {
       "home": "Inicio",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "pasajero": "Pasajero",
+        "reserva": "Reserva",
+        "vuelo": "Vuelo",
+        "asiento": "Asiento"
       },
       "account": {
         "main": "Cuenta",
